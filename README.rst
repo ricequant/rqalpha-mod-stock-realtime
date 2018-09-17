@@ -5,6 +5,7 @@ sys_stock_realtime Mod
 RQAlpha 接受实时行情并触发事件 Mod
 
 该模块目前只是一个初级的 Demo，用于展示如何接入自有行情进行回测/模拟/实盘
+
 该模块使用 tushare 获取实时行情，但可能与新版本的 tushare 不兼容
 
 开启或关闭 Mod
