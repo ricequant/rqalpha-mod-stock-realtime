@@ -21,7 +21,7 @@ from rqalpha.utils.config import parse_config
 from rqalpha.utils.logger import system_log
 
 
-cli_prefix = "mod__sys_stock_realtime__"
+cli_prefix = "mod__stock_realtime__"
 
 __config__ = {
     "priority": 200,
@@ -35,7 +35,7 @@ cli.commands['run'].params.append(
     click.Option(
         ('--redis-uri', cli_prefix + 'redis_uri'),
         type=click.STRING,
-        help="[sys_stock_realtime] market data redis uri",
+        help="[stock_realtime] market data redis uri",
     )
 )
 
@@ -44,7 +44,7 @@ cli.commands['run'].params.append(
 @click.argument('redis_url', required=True)
 def quotation_server(redis_url):
     """
-    [sys_stock_realtime] quotation service, download market data into redis
+    [stock_realtime] quotation service, download market data into redis
 
     Multiple RQAlpha instance can use single market data service.
     """
