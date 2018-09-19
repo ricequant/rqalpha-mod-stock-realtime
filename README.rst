@@ -1,5 +1,5 @@
 ===============================
-sys_stock_realtime Mod
+stock_realtime Mod
 ===============================
 
 RQAlpha 接受实时行情并触发事件 Mod
